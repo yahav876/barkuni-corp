@@ -1,0 +1,7 @@
+terraform {
+  backend "s3" {
+    bucket = var.general_config.backend_bucket_name
+    key    = "Terraform/barkuni-corp/barkuni-corp-env"
+    region = "us-east-1"
+  }
+}
